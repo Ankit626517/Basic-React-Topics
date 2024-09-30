@@ -4,7 +4,7 @@ import DPartOfConditionalRendering from './DPartOfConditionalRendering'
 function DMainConditionalRendering() {
   return (
     <div>
-      <DPartOfConditionalRendering/>
+      <DPartOfConditionalRendering isLoggedIn={true}  username="Ankit626517" />
     </div>
   )
 }

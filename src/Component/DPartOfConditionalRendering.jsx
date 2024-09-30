@@ -1,18 +1,13 @@
+// Conditional Rendering 
 import React, { useState } from 'react'
 
-function DPartOfConditionalRendering() {
+function DPartOfConditionalRendering(props) {
 
-    let  [status , setStatus ] = useState(false);
-  return (
-    <>
-      <button onClick={()=>setStatus(!status)  } >{status ? 'Hide ' : 'Show'}</button>
-      {
-        (status) ? <p>"Hello i am coder"</p>
-        :
-        ''
-      }
-    </>
-  )
+  return ( 
+     props.isLoggedIn ? <h2>Welocom {props.username}</h2> : <h2>pleas log in first</h2> 
+    
+    )
+
 }
 
 export default DPartOfConditionalRendering
